@@ -37,4 +37,7 @@ function draw()
   rope.show();
   roof.display();
 }
-
+function right_force()
+{
+  Matter.Body.applyForce(man.Body, {x:0, y:0}, {x: 0.05, y: 0});
+}
